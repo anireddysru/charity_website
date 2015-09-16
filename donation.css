@@ -1,0 +1,288 @@
+.sub{
+ text-align:right;  
+   
+}
+.b1{
+  background-color:#E68A00;
+  
+}
+.lab{
+    color:lightgoldenrodyellow;
+    font-family: serif;
+    font-size: 17px;
+}
+.con{
+ background-color:rgba(0,0,0,0.9); 
+    border-top:2px solid white;
+    border-bottom:2px solid white; 
+ 
+}
+.co{
+ margin-top: 60px;   
+}
+#head{
+ background-color:#E68A00;
+    color:black;
+    font-size:20px;
+    font-family: serif;
+
+}
+
+.dob{
+ border-radius:3px;   
+    width:30%;
+    height: 4%;
+}
+#text1{
+ width: 100%;
+padding:20%;
+border-radius: 3px;  
+    height: 4%;
+}
+
+#fn_1,#ln_1,#sn_1,#phone_1,#password,#confirm,#cbox,#em, #mon,#date,#yea,#cou,#gen{
+    color:red;
+  
+}
+/*body{
+ background-color: none;   
+}
+.b1{
+  background-color:rgba(0,0,0,0.7); 
+}
+#head{
+ background-color:rgba(0,0,0,0.7);
+    color:white;
+    font-size:20px;
+    font-family: serif;
+
+}
+.con{
+ background-image:url("/Users/sruthianireddy/Desktop/charity_website/images/donate1.png"); 
+   background-size: cover;
+  
+}*/
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	/*background-color:rgba(0,0,0,0.8);*/
+    background-image:url("/Users/sruthianireddy/Desktop/charity_website/images/donate1.png");
+    background-size: cover;
+    opacity: 0.6;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+    color: black;
+    border-color:#E68A00;
+   
+}
+
+
+
+
+
+/* Icons ---------------------------------- */
+
+
+
+
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #E68A00;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #E68A00;
+}
+	
+.submit:hover {
+	color: #E68A00;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+.env{
+    padding: 10px;
+    font-size: 18px;   
+}
+
+thead {/*color:rgba(232,149,25,0.8);*/
+color:black;
+}
+#up{
+
+   font-size: 30px;
+    border-radius: 20px;
+    border-color: red;
+    color:yellow;
+
+ -webkit-animation: updown .5s linear 1s infinite alternate; /* Chrome, Safari, Opera */
+animation: updown .5s linear 1s infinite alternate;
+      float:right;
+  
+}
+a:hover#up{
+ color:white;
+    text-decoration: none;
+  
+}
+
+@-webkit-keyframes updown {
+    from {-webkit-transform: scale(1); bottom: 130px;}
+    to {-webkit-transform: scale(1.2); bottom: 125px;}
+}
+
+/* Standard syntax */
+@keyframes updown {
+    from {transform: scale(1); bottom: 130px;}
+    to {transform: scale(1.2); bottom: 125px;}
+} 
+
+
+tbody {color:red;}
+tfoot {color:red;}
+table,th,td
+/*{border:1px solid rgba(232,149,25,0.8);}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+*{margin:0;padding:0;}
+
+
+.button{
+  width:100px;
+  background:#3399cc;
+  display:block;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.button:hover{
+  background:#2288bb;
+}
+
+.login{
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+#triangle{
+  width:0;
+  border-top:12x solid transparent;
+  border-right:12px solid transparent;
+  border-bottom:12px solid black;
+  border-left:12px solid transparent;
+  margin:0 auto;
+    float: left;
+}
+
+/*#login h1{
+  background:#3399cc;
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+
+
+
+
+
+input[type="email"],input[type="password"]{
+  width:92%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+}
+
+input[type="submit"]{
+  width:100%;
+  background:#3399cc;
+  border:0;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:100%;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+input[type="submit"]:hover{
+  background:#2288bb;
+}*/

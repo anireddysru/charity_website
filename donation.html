@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>charity_sruthi</title>
+<link href="/Users/sruthianireddy/Desktop/charity_website/donation.css" type="text/css" rel="stylesheet">
+
+  <link href="/Users/sruthianireddy/Desktop/charity_website/ch.css" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/Users/sruthianireddy/Desktop/charity_website/charity.js"></script>
+     
+    
+    <style>
+    @media only screen and (max-width: 580px) {
+	#form-div{
+		left: 6%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+        .scr{
+         left:3%;
+            margin-right: 3%;
+            
+        }
+}
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="mynav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      
+      <a class="navbar-brand" href="/Users/sruthianireddy/Desktop/charity_website/charity_sru.html" id="name2">Hope</a>	
+    </div>
+    
+      <div class="collapse navbar-collapse" id="myNavbar">
+     
+        <ul class="nav navbar-nav" id="mynavv">
+          <li><a href="/Users/sruthianireddy/Desktop/charity_website/charity_sru.html#mission" id="wd">What We Do</a></li>
+           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Campaigns <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="diff"> 
+              <li><a href="/Users/sruthianireddy/Desktop/charity_website/Campaigns.html#adopt" >Help Kids</a></li>
+              <li><a href="/Users/sruthianireddy/Desktop/charity_website/Campaigns.html#adult">Help Senior Citizens</a></li>
+              <li><a href="/Users/sruthianireddy/Desktop/charity_website/Campaigns.html#far" >Help Farmers</a></li>
+            </ul>
+          </li>
+            
+        </ul>
+        </div>
+        </div>
+    </nav>
+     
+ 
+
+
+    <div class="cont">
+     
+   
+    <!-- Donation -->
+    <div class="container co">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+<div class="panel panel-default">
+  <div class="panel-heading btn btn-primary btn-large btn-block" id="head">Donation Information</div>
+  
+     <div class="panel-body con" id="sp">
+              <script>
+    $("#sp").hide();
+    $("#head").click(function(){
+       $("#sp").show();
+    });
+    
+        
+                  
+    
+    </script>
+    <form name="myForm" class="form-horizontal" role="form" method="post" id="fm">
+                         
+        <div class="form-group">
+                <label class="control-label col-sm-4 lab" for ="Gender" >Amount</label>
+            <div class="col-sm-8">
+            <label class="radio lab scr">
+                <input type="radio" name="money" value="$150">$150
+                </label>
+                 <label class="radio lab scr">
+                <input type="radio" name="money" value="$100">$100
+                </label>
+                <label class="radio lab scr">
+                <input type="radio" name="money" value="$50">$50
+                </label>
+                <label class="radio lab scr">
+                <input type="radio" name="money" value="$25">$25
+                </label>
+                <label class="radio lab scr">
+                <input type="radio" name="money" value="$10">$10
+                </label>
+                <label class="radio lab scr">
+                <input type="radio" name="money" value="surprise">Surprise Us        <input type="text" placeholder="Enter Amount" id="ur_amt">
+                </label>
+          <p id="gen"></p>
+            </div> 
+           
+        </div> 
+      
+        <div class="form-group">
+      <label class="control-label col-sm-4 lab" for="Country">Category</label>
+          <div class="col-sm-8" id="sel">
+  
+<select name="category" id="text1">
+<option>  Select  </option>
+<option value="orphans">Orphans</option>
+<option value="educate">Educate a kid</option>
+<option value="kidshealth">Kids Health</option>
+<option value="old age">Old Age</option>
+<option value="adults health">Adults health</option>
+ <option value="adults health">Livestock</option>
+    <option value="adults health">Farmers health</option>
+</select><p id="cat"></p>
+</div>
+
+    </div>
+       
+    </form >
+        
+         <div class="rounded-icon"> <a class="glyphicon glyphicon-hand-up" id="up"></a> </div>
+                   <script>
+   
+    $("#up").click(function(){
+       $("#sp").hide();
+    });
+    
+        
+                  
+    
+    </script>
+         </div>    
+         </div>
+          
+        
+            </div>
+    </div>
+    </div> <!-- End -->
+<!-- Contact Information -->
+<div class="container">
+    <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+<div class="panel panel-default">
+  <div class="panel-heading" id="head">Contact Information</div>
+
+         
+     <div class="panel-body con">
+        
+    <form name="myForm" class="form-horizontal" role="form" onsubmit="return validateForm()" method="post">
+           <div class="form-group">
+               
+                <label class="control-label col-sm-4 lab">User Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ln" placeholder="Enter User Name..">
+                <p id="ln_1"></p>
+            </div> 
+        </div>
+        <div class="form-group">
+                  <label class="control-label col-sm-4 lab" for="fIRSTNAME">First Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control inp" id="fn" placeholder="Enter First Name..."><p id="fn_1"></p>
+            </div>
+        </div>
+        
+        <div class="form-group">
+                 <label class="control-label col-sm-4 lab" for ="lastname">Last Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ln" placeholder="Enter Last Name..">
+                <p id="ln_1"></p>
+            </div> 
+        </div>
+        <div class="form-group">
+      <label class="control-label col-sm-4 lab" for="Screen name">Address</label>
+            <div class="col-sm-8">
+            <input type="text" class="form-control" id="sn" placeholder="Enter Your Address...">
+                <p id="ad_1"></p>
+            </div>
+        </div>
+    <div class="form-group">
+            <label class="control-label col-sm-4 lab" for="Screen name">City</label>
+            <div class="col-sm-8">
+            <input type="text" class="form-control" id="sn" placeholder="Enter City...">
+                <p id="city_1"></p>
+            </div>
+        </div>
+<div class="form-group">
+            <label class="control-label col-sm-4 lab" for="Screen name">State/Province</label>
+            <div class="col-sm-8">
+            <input type="text" class="form-control" id="sn" placeholder="Enter State...">
+                <p id="state_1"></p>
+            </div>
+        </div>
+      <div class="form-group">
+      <label class="control-label col-sm-4 lab" for="Country">Country</label>
+          <div class="col-sm-8" id="sel">
+  
+<select name="Country" id="text1">
+<option>  Select  </option>
+<option value="India">India</option>
+<option value="China">China</option>
+<option value="Germany">Germany</option>
+<option value="Australia">Australia</option>
+<option value="United Kingdom">United Kingdom</option>
+</select><p id="cou"></p>
+</div>
+
+    </div>
+            <div class="form-group">
+      <label class="control-label col-sm-4 lab" for="Screen name">Zip/Postal Code</label>
+            <div class="col-sm-8">
+            <input type="text" class="form-control" id="sn" placeholder="Enter Zip Code...">
+                <p id="ad_1"></p>
+            </div>
+        </div>
+   <div class="form-group">
+        <label class="control-label col-sm-4 lab" for="email">Email</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="email" placeholder="Enter E-mail...">
+            <p id="em"></p>
+        </div>
+  </div>
+        <div class="form-group">
+        <label class="control-label col-sm-4 lab" for="phone">Phone</label>
+        <div class="col-sm-8">
+            <input type="tel" class="form-control" id="phone" placeholder="Enter phone...">
+                   <p id="phone_1"></p>
+            
+        </div>
+     
+  </div>
+    </div>
+      </div>   
+    </form>
+        </div>     
+</div>
+    </div>
+    </div> <!--End -->
+
+<!-- Credit card Information -->
+<div class="container">
+    <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+<div class="panel panel-default">
+  <div class="panel-heading" id="head">Credit Card Information</div>
+
+         
+     <div class="panel-body con">
+        
+    <form name="myForm" class="form-horizontal" role="form" onsubmit="return validateForm()" method="post">
+           <div class="form-group">
+               
+                <label class="control-label col-sm-4 lab">User Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ln" placeholder="Enter User Name..">
+                <p id="ln_1"></p>
+            </div> 
+        </div>
+        <div class="form-group">
+                  <label class="control-label col-sm-4 lab" for="fIRSTNAME">Card Holder Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control inp" id="fn" placeholder="Enter Card Holder's Name.."><p id="fn_1"></p>
+            </div>
+        </div>
+        
+        <div class="form-group">
+                 <label class="control-label col-sm-4 lab" for ="lastname">xxxxxxxx</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ln" placeholder="Enter Last Name..">
+                <p id="ln_1"></p>
+            </div> 
+        </div>
+        <div class="form-group">
+      <label class="control-label col-sm-4 lab" for="Screen name">Card Account Number</label>
+            <div class="col-sm-8">
+            <input type="text" class="form-control" id="sn" placeholder="Enter Account number">
+                <p id="ad_1"></p>
+            </div>
+        </div>
+<div class="form-group">
+                <label class="control-label col-sm-4 lab" for="Screen name">Expiration Date</label>
+                    <div class="col-sm-8" id="demo">
+                   <select name="month" class="dob">
+                       <option value="">select</option> 
+                       <option value="1">Jan</option> 
+                       <option value="2">Feb</option> 
+                       <option value="3">Mar</option>
+                       <option value="4">Apr</option> 
+                       <option value="5">May</option> 
+                       <option value="6">Jun</option> 
+                       <option value="7">Jul</option> 
+                       <option value="8">Aug</option> 
+                       <option value="9">Sep</option> 
+                       <option value="10">Oct</option> 
+                       <option value="11">Nov</option>
+                       <option value="12">Dec</option> 
+                    </select> 
+                   <select name="year" class="dob" > 
+                    <option value="">select</option>
+                     
+                       <option value="">2015</option>
+                       <option value="">2016</option>
+                       <option value="">2017</option>
+                       <option value="">2018</option>
+                       <option value="">2019</option>
+                       <option value="">2020</option>
+                       
+                       
+                    </select> 
+                   
+                         <p id ="mon"></p><p id ="date"></p><p id="yea"></p>
+                </div> 
+                   
+            </div> 
+<div class="form-group">
+            <label class="control-label col-sm-4 lab" for="Screen name">Security Code</label>
+            <div class="col-sm-8">
+            <input type="text" class="form-control" id="sn" placeholder="Enter Security Code(cvv)..">
+                <p id="state_1"></p>
+            </div>
+        </div>
+  
+        
+   <div class="form-group">
+        <label class="control-label col-sm-4 lab" for="email">Transaction Amount</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="email" placeholder="Enter Transaction Amount...">
+            <p id="em"></p>
+        </div>
+  </div>
+   
+    
+    </div>
+      </div>   
+    </form>
+        </div>  
+</div>
+    </div>
+    </div><!-- End -->
+
+<!-- Billing Address -->
+<div class="container">
+    <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+<div class="panel panel-default">
+  <div class="panel-heading" id="head">Billing Address</div>
+
+         
+     <div class="panel-body con">
+        
+    <form name="myForm" class="form-horizontal" role="form" onsubmit="return validateForm()" method="post">
+          <div class="form-group"> 
+               <label class="control-label col-sm-4 lab"> Same as Above </label> 
+    <div class="col-sm-7">
+      <div class="checkbox">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"  name="chk">
+          <p id="cbox"></p>
+      </div>
+    </div>
+  </div>
+           <div class="form-group">
+               
+                <label class="control-label col-sm-4 lab">Address</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ln" placeholder="Enter Billing Address..">
+                <p id="ln_1"></p>
+            </div> 
+        </div>
+        <div class="form-group">
+                  <label class="control-label col-sm-4 lab" for="fIRSTNAME">City</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control inp" id="fn" placeholder="Enter City..."><p id="fn_1"></p>
+            </div>
+        </div>
+        
+        <div class="form-group">
+                 <label class="control-label col-sm-4 lab" for ="lastname">State/Province</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ln" placeholder="Enter State..">
+                <p id="ln_1"></p>
+            </div> 
+        </div>
+        <div class="form-group">
+      <label class="control-label col-sm-4 lab" for="Screen name">Zip/Postal Code</label>
+            <div class="col-sm-8">
+            <input type="text" class="form-control" id="sn" placeholder="Enter Zip Code...">
+                <p id="ad_1"></p>
+            </div>
+        </div>
+ <div class="form-group">
+      <label class="control-label col-sm-4 lab" for="Country">Country</label>
+          <div class="col-sm-8" id="sel">
+  
+<select name="Country" id="text1">
+<option>  Select  </option>
+<option value="India">India</option>
+<option value="China">China</option>
+<option value="Germany">Germany</option>
+<option value="Australia">Australia</option>
+<option value="United Kingdom">United Kingdom</option>
+</select><p id="cou"></p>
+</div>
+
+    </div>
+   <div class="form-group">
+        <label class="control-label col-sm-4 lab" for="email">Email</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="email" placeholder="Enter E-mail...">
+            <p id="em"></p>
+        </div>
+  </div>
+        <div class="form-group">
+        <label class="control-label col-sm-4 lab" for="phone">Phone</label>
+        <div class="col-sm-8">
+            <input type="tel" class="form-control" id="phone" placeholder="Enter phone...">
+                   <p id="phone_1"></p>
+            
+        </div>  
+  </div>
+    </div>
+     <div class="panel-body b1">
+  <div class="form-group sub"> 
+    <div class="col-sm-offset-4 col-sm-8">
+      <a class="btn btn-default" href="#" data-toggle="modal" data-target="#myModal" style="font-size:16px;">Preview</a>  
+
+        <a class="btn btn-danger">Cancel</a >
+    </div>
+  </div>
+     </div>
+      </div>    
+    </form>
+        </div>
+</div>
+    </div>
+    </div><!-- End -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-body">
+<div id="form-main">
+  <div id="form-div" style="opacity:1.0;" >
+    <form id="form1" >
+  
+       <label >First Name :</label>
+     <p id=""> </p>
+          
+        <label >Last Name :</label><p id="">
+      </p>
+            
+        <label >Address :</label><p id=""></p>
+            <label >City :</label><p id=""></p>
+        <label >State/Province :</label>
+        <p id=""></p>
+        <label>Country :</label><p id=""></p>
+        <label >Phone :</label><p id=""></p>
+        <label >Email :</label><p id=""></p>
+      <label >Items selected for : <p id=""><i id=""></i></p></label><p id=""></p>
+<table border="1" style="width:300px">
+        <thead>
+<tr>
+<th>Item Description</th>
+<th>Quantity</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kids</td>
+<td>1</td>
+<td>$100</td>
+</tr>
+
+</tfoot>
+</table>
+      <br>
+      <div class="submit">
+        <input type="submit" value="Process Donation" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
